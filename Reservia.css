@@ -30,18 +30,26 @@ width: 100%;
 padding: 0 15px; 
 }
 
+header {
+display: flex;
+height: 80px;
+}
 
-.header {
-  height: 80px;
-  margin-top: 10px;
-  display: flex;
-max-width: 171px;
+header a {
+line-height: 80px;
+}
+
+header li {
+margin-right: 45px;
+
 }
 
 .logo {
-  
+  height: 80px;
   display: flex;
 }
+
+
 
 #unrated {
   color: #f2f2f2;
@@ -49,16 +57,15 @@ max-width: 171px;
 
 .boutons {
   margin-left: auto;
-  width: 30%;
-
+  height: 80px; 
 }
 
-.boutons_h,
-.boutons_1,
-.boutons_2 {
+.boutons_h {
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  height: 80px;
 }
 
 .hebergements,
@@ -66,17 +73,23 @@ max-width: 171px;
   color: #0065fc;
 }
 
+.hebergements {
+  border-top : 3px solid #0065FC
+}
+
 .s_inscrire {
 color: #0065fc;
 font-weight: bold;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+
+
 }
 
-.hebergements,
-.activites,
-.s_inscrire {
-  margin-right: 20px;
-  font-family: Raleway;
-}
+
+
+
 
 
 
@@ -94,7 +107,8 @@ h2 {
 .local {
   display: flex;
 
-  width: 25%;
+  width: 20%;
+  height: 40px;
 
   font-size: 18px;
   font-weight: bold;
@@ -147,7 +161,7 @@ h2 {
   background-color: #0065fc;
 }
 
-.fa-search {
+.fas.fa-search {
   display: none;
 }
 
@@ -179,7 +193,16 @@ h2 {
   font-size: 20px;
 }
 
-.eco_ {
+#Filtre_bouton h2 {
+margin-top: 40px;
+
+}
+
+.eco_,
+.fam_,
+.rom_,
+.ani_
+ {
   display: flex;
   color: #0065fc;
 
@@ -188,23 +211,22 @@ h2 {
   border-color: #f2f2f2;
   
   margin: 30px;
-  padding-right: 18px;
+  padding-right: 10px;
 }
 
-.fam_,
-.rom_,
-.ani_ {
+/*
+ {
   display: flex;
 
-  padding-right: 15px;
-  margin: 30px;
+  padding-right: 1%;
+  margin: 2%;
 
   border: 3px solid;
   border-radius: 30px 30px 30px 30px;
   border-color: #f2f2f2;
 
  
-}
+}*/
 
 .eco,
 .fam,
@@ -217,7 +239,6 @@ h2 {
   align-items: center;
 
 
-  margin: auto;
 
 }
 
@@ -279,6 +300,10 @@ h2 {
   background-color: #f2f2f2;
   border-radius: 30px 30px 30px 30px;
 
+   flex: 1 0 66%;
+  margin-right: 20px;
+  padding: 20px;
+
   height: 90%;
 
 }
@@ -290,19 +315,16 @@ h2 {
   display: flex;
 
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   font-family: Raleway;
 }
 
 .heber_link {
   display: flex;
   flex-wrap: wrap;
+
 }
 
-.heber_ligne1,
-.heber_ligne2 {
-  display: flex;
-}
 
 .canneb,
 .mouette,
@@ -320,6 +342,7 @@ h2 {
 
   background-color: white;
 
+
   overflow: hidden;
 }
 
@@ -328,18 +351,14 @@ h2 {
 .img_port,
 .img_panier,
 .img_amina {
-  height: 130px;
-  width: 250px;
-  border-radius: 30px 30px 0px 0px;
+  height: 150px;
+  width: 100%;
   overflow: hidden;
 }
 
-.txt_soleil,
-.txt_eau,
-.txt_bleu_blanc {
-flex-direction: column;
-width: 75%;
-}
+
+
+
 
 .txt_canneb,
 .txt_mouette,
@@ -352,25 +371,15 @@ width: 75%;
 .txt_frioul,
 .txt_garde,
 .txt_longchamp {
-  padding-left: 10px;
+
   font-weight: bold;
 }
 
-.nuit_25,
-.nuit_76,
-.nuit_52,
-.nuit_46,
-.nuit_23,
-.nuit_96,
-.nuit_128,
-.nuit_71,
-.nuit_68 {
-  padding-left: 10px;
-}
+
 
 .stars {
   color: #0065fc;
-  margin-left: 10px;
+  
 }
 
 .star_unrate {
@@ -385,19 +394,26 @@ width: 75%;
 
 .popu_ {
   display: flex;
+  flex : 1 0 33%;
 
   background-color: #f2f2f2;
   border-radius: 30px 30px 30px 30px;
-
-
+  padding: 20px;
 }
 
 .popu_titre {
   flex-direction: column;
+ 
 }
 
 .popu_2 {
   display: flex;
+  align-items: center;
+}
+
+.popu_2 .fas.fa-chart-line {
+  margin-left: auto; 
+  padding: 20px;
 }
 
 
@@ -413,7 +429,16 @@ width: 75%;
   border-color: white;
 
   background-color: white;
-  
+  overflow: hidden;
+
+  margin-bottom: 10px;
+}
+
+.txt_soleil,
+.txt_eau,
+.txt_bleu_blanc { 
+width: 66%;
+padding: 0 0 0 7px;
 }
 
 
@@ -422,8 +447,7 @@ width: 75%;
 .img_eau,
 .img_bleu_blanc {
   height: 150px;
-  width: 150px;
-  border-radius: 30px 0px 0px 30px;
+  width: 34%;
   object-fit: cover;
 }
 
@@ -579,7 +603,7 @@ footer {
 /*RESPONSIVE*/
 
 /*Desktop*/
-@media all and (max-width: 992px) {
+@media all and (max-width: 1300px) {
   #hebergement {
     flex-direction: column;
     height: auto;
@@ -593,40 +617,56 @@ footer {
   .panier,
   .amina {
     max-width: 992px;
-    
+    flex: 1 0 50%;
   }
 
   .container {
     width: 100%;
   }
 
+ 
+
+
 }
 
 /*Tablette*/
-@media all and (max-width: 809px) {
+@media all and (max-width: 811px) {
 
 
 
   header {
     flex-direction: column;
+    height: unset;
   }
 
-  .Filtre_bouton {
+  .titre {
+    margin-top: 5%;
+  }
+
+  #Filtre_bouton {
     flex-wrap: wrap;
   }
 
-  .heber_ {
-    flex-wrap: wrap;
-  }
+.local {
+  width: 50%;
+}
 
 
   .heber_:nth-child(1) {
+    margin-top: 20px;
     order: 2;
+  }
+
+  .popu_:nth-child(2) {
+    order: 1;
 
   }
-  .popu_:nth-child(2) {
-order: 1;
 
+
+  .soleil,
+  .eau,
+  .bleu_blanc {
+    margin-bottom : 2rem;
   }
 
 
@@ -687,8 +727,6 @@ height: 255px; }
 
 
 
- 
-
 
 
 
@@ -696,26 +734,104 @@ height: 255px; }
 /*Mobile*/
 @media all and (max-width: 480px) {
 
-  
-  
-  .heber_ {
-    flex-wrap: wrap;
-    align-items: stretch;
-  }
 
+ .logo {
+  width: 50%;
+  height: 50%;
+ } 
 
-.logo {
-height: 80%;
+.logo_res {
+  order: 1;
+
 }
+
 
 .s_inscrire {
-align-items: flex-start;
-  
+  order:2;
+
 }
+
+.boutons{
+  order:3;
+  margin-top: 20%;
+}
+
+.eco_ {
+  margin-left: 5%;
+}
+
+
+
+
+.fam_,
+.rom_,
+.ani_ {
+margin: 2%;
+}
+
+
+.eco,
+.fam,
+.rom,
+.ani {
+
+  font-size: 85%;
+}
+
+.ani_ {
+  margin-top: 20px;
+}
+
+.ville_A {
+  width: 70%;
+
+  margin-left: 10px;
+}
+
+.rechercher {
+  width:20% ; 
+
+}
+
+.local {
+  width: 100%; 
+
+}
+
+header a {
+line-height: 0%;
+}
+
+
+
+.hebergements {
+  width: 50%;
+
+  border-bottom: 3px solid #0065FC;
+  border-top: 0px;
+}
+
+.activites {
+  width: 50%;
+  border-bottom: 3px solid #f2f2f2;
+
+}
+
+
 
 .rechercher_txt {
   display: none;
 }
+
+.fas.fa-search {
+display: block;
+  
+}
+
+.popu_2 a {
+  margin: 50px;
+  
+  }
 
 
 .img_canneb,
@@ -726,18 +842,6 @@ align-items: flex-start;
 
 min-width: 100%;
 }
-
-
-
-.img_soleil,
-.img_eau,
-.img_bleu_blanc {
-  height: 150px;
-  width: 200px;
-  border-radius: 30px 0px 0px 30px;
-}
-
-
 
   .canneb,
   .mouette,
@@ -750,18 +854,29 @@ min-width: 100%;
   }
 
 
+  .soleil,
+  .eau,
+  .bleu_blanc{
+    object-fit: cover;
+  }
+
+
+
+.img_soleil,
+.img_eau,
+.img_bleu_blanc {
+  height: 170px;
+
+
+}
+
   .propos {
     flex-direction: column;
   }
 
-  .fam_,
-  .rom_,
-  .ani_,
-  .hebergements {
-    margin: 0px;
-  
-   
-  }
+
+
+ 
 
 }
 
@@ -789,3 +904,5 @@ width: 375px;
 
 
 }*/
+
+
