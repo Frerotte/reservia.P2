@@ -1,26 +1,7 @@
 @font-face {
   font-family: "Raleway";
   src: url("Raleway-Black.ttf") format "truetype";
-  src: url("Raleway/Raleway-Italic-VariableFont_wght.ttf") format "truetype";
-  src: url("Raleway/Raleway-VariableFont_wght.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-Black.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-BlackItalic.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-Bold.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-BoldItalic.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-ExtraBold.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-ExtraBoldItalic.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-ExtraLight.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-ExtraLightItalic.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-Italic.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-Light.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-LightItalic.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-Medium.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-MediumItalic.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-Regular.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-SemiBold.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-SemiBoldItalic.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-Thin.ttf") format "truetype";
-  src: url("Raleway/static/Raleway-ThinItalic.ttf") format "truetype";
+
 }
 
 .container {
@@ -51,20 +32,21 @@ margin-right: 45px;
 
 
 
-#unrated {
-  color: #f2f2f2;
+.unrated {
+  color: #f2f2f2 ;
 }
 
 .boutons {
   margin-left: auto;
-  height: 80px; 
 }
 
 .boutons_h {
   display: flex;
-  list-style-type: none; 
-
+  list-style-type: none;
   height: 80px;
+  padding: 0;
+  margin: 0;
+
 }
 
 .hebergements,
@@ -80,12 +62,9 @@ margin-right: 45px;
 
 .s_inscrire {
 color: #0065fc;
-
 font-weight: bold;
 display: flex;
 justify-content: flex-end;
-align-items: flex-end;
-
 
 }
 
@@ -139,9 +118,8 @@ h2 {
 
 .ville {
   display: flex;
-
-  margin-top: 8px;
-  margin-left: 0px;
+  height: 36px;
+  border: none;
   
 }
 
@@ -156,6 +134,7 @@ h2 {
 
   margin-left: 10px;
   margin-right: 0px;
+
 
   border-radius: 0px 10px 10px 0px;
 
@@ -252,7 +231,8 @@ margin-top: 40px;
 
 .info {
   display: flex;
-  margin-top: 50px;
+  margin-top: 50px;  
+  margin-bottom: 50px;
 }
 
 .info_i {
@@ -273,11 +253,8 @@ margin-top: 40px;
 
 .info_ {
   display: flex;
-
   margin-left: 10px;
-  margin-bottom: 50px;
   margin-top: 8px;
-
   font-family: Raleway;
 }
 
@@ -332,20 +309,13 @@ margin-top: 40px;
 }
 
 
-.txt_cards {
-margin-bottom: 50px;
-}
+
 
 .img_heber {
-  height: 60%;
+  height: 45%;
   width: 100%;
- 
+ object-fit: cover;
 }
-
-
-
-
-
 
 
 
@@ -479,17 +449,27 @@ padding: 0 0 0 13px;
 .img_calanques {
   height: calc(100% - 50px);
   object-fit: cover;
-  width: 100%;
+  width: 200%;
 }
 
-.img_pomegues,
+.img_pomegues {
+  height: calc(100% - 50px);
+  width: 100%;
+  object-fit: cover;
+}
+
 .img_garde {
   height: calc(100% - 50px);
   width: 100%;
   object-fit: cover;
 }
 
-.img_frioul,
+.img_frioul {
+  height: calc(100% - 50px);
+  width: 100%;
+  object-fit: cover;
+}
+
 .img_longchamp {
   height: calc(100% - 50px);
   width: 100%;
@@ -525,6 +505,9 @@ padding: 0 0 0 13px;
   list-style-type: none;
 }
 
+.propos_txt {
+  padding: 0;
+}
 
 
 body {
@@ -536,6 +519,11 @@ body {
 
 footer {
   background-color: #f2f2f2;
+}
+
+footer .container {
+  padding: 20px;
+  
 }
 
 #hebergement {
@@ -598,20 +586,6 @@ footer {
 
   
 
-.hebergements,
-.activites {
-  border-bottom-width: 50%; 
-}
-
-
-
-
-
-.local {
-  width: 50%;
-}
-
-
    .heber_:nth-child(1) {
     margin-top: 20px;
     margin-right: 0%;
@@ -655,8 +629,9 @@ width: 100%;
   .mer,
   .panier,
   .amina {
-    flex: 1 0 50%;
-    width: 90%;
+    flex: 1 0 47%;
+ 
+    margin-top: 4%;
   }
 
   
@@ -741,7 +716,7 @@ margin-left: 0%;
 .rom_,
 .ani_ {
   width: 60%;
- margin-top: 2%;
+ margin-top: 1%;
 }
 
 
@@ -802,7 +777,7 @@ margin-left: 0%;
 }
 
 .rechercher {
-  width:5% ; 
+  width: 5px;
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -813,6 +788,12 @@ margin-left: 0%;
 
 
 
+.hebergements,
+.activites {
+ width: 50%;
+ margin: 0;
+ text-align: center;
+}
 
 
 .hebergements {
@@ -827,7 +808,7 @@ margin-left: 0%;
 
   height: 70%;
   border-bottom: 3px solid #f2f2f2;
-  margin-left: 30px;
+
 }
 
 
@@ -871,9 +852,14 @@ border-radius: unset;
     max-width: 100%;
   }
 
+#activites_ {
+  padding: 20px;
+
+}
+
+
 .marseille {
   gap:20px
-
   
 }
 
