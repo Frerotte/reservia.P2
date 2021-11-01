@@ -36,7 +36,7 @@ height: 80px;
 }
 
 header a {
-line-height: 80px;
+line-height: 64px;
 }
 
 header li {
@@ -45,7 +45,7 @@ margin-right: 45px;
 }
 
 .logo {
-  height: 80px;
+  height: 60px;
   display: flex;
 }
 
@@ -63,8 +63,7 @@ margin-right: 45px;
 .boutons_h {
   display: flex;
   list-style-type: none; 
-  padding: 0;
-  margin: 0;
+
   height: 80px;
 }
 
@@ -77,8 +76,11 @@ margin-right: 45px;
   border-top : 3px solid #0065FC
 }
 
+
+
 .s_inscrire {
 color: #0065fc;
+
 font-weight: bold;
 display: flex;
 justify-content: flex-end;
@@ -88,7 +90,7 @@ align-items: flex-end;
 }
 
 
-
+.s_inscrire:visited { color: #0065fc; }
 
 
 
@@ -214,19 +216,7 @@ margin-top: 40px;
   padding-right: 10px;
 }
 
-/*
- {
-  display: flex;
 
-  padding-right: 1%;
-  margin: 2%;
-
-  border: 3px solid;
-  border-radius: 30px 30px 30px 30px;
-  border-color: #f2f2f2;
-
- 
-}*/
 
 .eco,
 .fam,
@@ -293,36 +283,32 @@ margin-top: 40px;
 
 .heber_ {
   display: flex;
-  flex-direction: column;
-
   flex-wrap: wrap;
-
   background-color: #f2f2f2;
   border-radius: 30px 30px 30px 30px;
-
-   flex: 1 0 66%;
-  margin-right: 20px;
+  margin-right: 60px;
   padding: 20px;
-
-  height: 90%;
-
+  width: 67%;
 }
+
+
 
 .heber_titre,
 .popu_titre {
-  margin-bottom: 10px;
-
   display: flex;
 
   font-weight: bold;
-  font-size: 17px;
   font-family: Raleway;
 }
 
-.heber_link {
+.heber_card {
   display: flex;
   flex-wrap: wrap;
 
+}
+
+.afficher:visited {
+  color: #000000;
 }
 
 
@@ -332,55 +318,44 @@ margin-top: 40px;
 .mer,
 .panier,
 .amina {
-
   border-width: 30px;
   border-radius: 30px 30px 30px 30px;
   border: 4px solid;
   border-color: white;
-
+  width: 16rem;
+  height: 15rem;
   margin-right: 20px;
 
+
   background-color: white;
-
-
   overflow: hidden;
 }
 
-.img_canneb,
-.img_mouette,
-.img_port,
-.img_panier,
-.img_amina {
-  height: 150px;
+
+.txt_cards {
+margin-bottom: 50px;
+}
+
+.img_heber {
+  height: 60%;
   width: 100%;
-  overflow: hidden;
+ 
 }
 
 
 
 
 
-.txt_canneb,
-.txt_mouette,
-.txt_port,
-.txt_mer,
-.txt_panier,
-.txt_amina,
-.txt_vieux_port,
-.txt_pomegues,
-.txt_frioul,
-.txt_garde,
-.txt_longchamp {
-
-  font-weight: bold;
-}
 
 
 
-.stars {
+.stars_mars,
+.stars_popu {
   color: #0065fc;
-  
+
 }
+
+
 
 .star_unrate {
   color: #f2f2f2;
@@ -390,20 +365,24 @@ margin-top: 40px;
 .panier,
 .amina {
   margin-top: 20px;
+
 }
 
 .popu_ {
   display: flex;
-  flex : 1 0 33%;
-
+  width: 35%;
+  
   background-color: #f2f2f2;
   border-radius: 30px 30px 30px 30px;
   padding: 20px;
 }
 
+.popu_cards {
+  margin-top : 15px;
+}
+
 .popu_titre {
   flex-direction: column;
- 
 }
 
 .popu_2 {
@@ -421,8 +400,8 @@ margin-top: 40px;
 .soleil,
 .eau,
 .bleu_blanc {
- display: flex;
-
+  display: flex;
+  height: 27%;
   width: 100%;
   border-radius: 30px 30px 30px 30px;
   border: 4px solid;
@@ -431,14 +410,12 @@ margin-top: 40px;
   background-color: white;
   overflow: hidden;
 
-  margin-bottom: 10px;
+  margin-bottom: 8%;
 }
 
-.txt_soleil,
-.txt_eau,
-.txt_bleu_blanc { 
-width: 66%;
-padding: 0 0 0 7px;
+.txt_popu { 
+width: 59%;
+padding: 0 0 0 13px;
 }
 
 
@@ -446,9 +423,10 @@ padding: 0 0 0 7px;
 .img_soleil,
 .img_eau,
 .img_bleu_blanc {
-  height: 150px;
+  
   width: 34%;
   object-fit: cover;
+
 }
 
 .marseille_titre {
@@ -488,7 +466,7 @@ padding: 0 0 0 7px;
   border: 4px solid #ffffff;
   border-color: white;
 
-  box-shadow: 0.5px 0.5px 10px;
+  box-shadow: 0.3px 0.3px 5px;
   overflow: hidden;
 
   box-sizing: border-box;
@@ -547,6 +525,8 @@ padding: 0 0 0 7px;
   list-style-type: none;
 }
 
+
+
 body {
   font-family: Raleway;
   margin: 0;
@@ -555,7 +535,6 @@ body {
 }
 
 footer {
-
   background-color: #f2f2f2;
 }
 
@@ -568,7 +547,7 @@ footer {
 .marseille {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(10, 0.1fr);
+  grid-template-rows: repeat(10, 0.070fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 
@@ -602,64 +581,47 @@ footer {
 
 /*RESPONSIVE*/
 
-/*Desktop*/
-@media all and (max-width: 1300px) {
+
+/*Tablette*/
+@media all and (max-width: 810px) {
+
   #hebergement {
     flex-direction: column;
     height: auto;
    
   }
 
-  .canneb,
-  .mouette,
-  .port,
-  .mer,
-  .panier,
-  .amina {
-    max-width: 992px;
-    flex: 1 0 50%;
-  }
-
   .container {
     width: 100%;
   }
 
- 
 
+  
 
+.hebergements,
+.activites {
+  border-bottom-width: 50%; 
 }
 
-/*Tablette*/
-@media all and (max-width: 811px) {
 
 
 
-  header {
-    flex-direction: column;
-    height: unset;
-  }
-
-  .titre {
-    margin-top: 5%;
-  }
-
-  #Filtre_bouton {
-    flex-wrap: wrap;
-  }
 
 .local {
   width: 50%;
 }
 
 
-  .heber_:nth-child(1) {
+   .heber_:nth-child(1) {
     margin-top: 20px;
+    margin-right: 0%;
+    width: 100%;
     order: 2;
   }
 
-  .popu_:nth-child(2) {
+ .popu_:nth-child(2) {
     order: 1;
-
+width: 100%;
   }
 
 
@@ -685,11 +647,18 @@ footer {
       "calanques"
       "garde"
       "longchamp";
-
-
-   
-
   }
+
+  .canneb,
+  .mouette,
+  .port,
+  .mer,
+  .panier,
+  .amina {
+    flex: 1 0 50%;
+    width: 90%;
+  }
+
   
   .pomegues { 
     grid-area: 2 / 1 / 2 / 1;
@@ -715,10 +684,10 @@ height: 255px; }
     grid-area: 6 / 1 / 6 / 1;
     height: 255px; }
 
-}
 
 
-  
+
+
 
   .txt_garde,
   .txt_calanques {
@@ -734,40 +703,87 @@ height: 255px; }
 /*Mobile*/
 @media all and (max-width: 480px) {
 
-
- .logo {
-  width: 50%;
-  height: 50%;
- } 
-
-.logo_res {
-  order: 1;
+.container {
+  padding :unset;
 
 }
 
-
-.s_inscrire {
-  order:2;
-
+header {
+  flex-wrap: wrap;
 }
 
-.boutons{
-  order:3;
-  margin-top: 20%;
+#head {
+  margin: 0 5% 0 5%;
 }
 
-.eco_ {
-  margin-left: 5%;
-}
+  .logo_res {
+    order: 1;
+ margin-left: 5%;
+  }
+  
+  .titre {
+    margin-top: 30%;
+  }
+  
+  .s_inscrire {
+    order:1;
+ width: 50%;
+  }
+  
+  .boutons{
+    order: 2;
+margin-left: 0%;
+  }
 
-
-
-
+  
+.eco_,
 .fam_,
 .rom_,
 .ani_ {
-margin: 2%;
+  width: 60%;
+ margin-top: 2%;
 }
+
+
+
+
+
+
+ .heber_{
+   width: 100%;
+   border-radius: unset;
+ }
+
+#Filtre_bouton {
+  flex-direction: column;
+}
+
+
+
+
+.soleil,
+.eau,
+.bleu_blanc{
+  object-fit: cover;
+}
+
+.txt_soleil,
+.txt_eau,
+.txt_bleu_blanc {
+  padding: 0 0 0 25px;
+}
+
+.img_soleil,
+.img_eau,
+.img_bleu_blanc {
+  height: 170px;
+}
+
+
+
+
+
+
 
 
 .eco,
@@ -778,19 +794,16 @@ margin: 2%;
   font-size: 85%;
 }
 
-.ani_ {
-  margin-top: 20px;
-}
+
 
 .ville_A {
   width: 70%;
-
   margin-left: 10px;
 }
 
 .rechercher {
-  width:20% ; 
-
+  width:5% ; 
+  border-radius: 10px 10px 10px 10px;
 }
 
 .local {
@@ -798,23 +811,23 @@ margin: 2%;
 
 }
 
-header a {
-line-height: 0%;
-}
+
 
 
 
 .hebergements {
-  width: 50%;
+
+  height: 70%;
 
   border-bottom: 3px solid #0065FC;
   border-top: 0px;
 }
 
 .activites {
-  width: 50%;
-  border-bottom: 3px solid #f2f2f2;
 
+  height: 70%;
+  border-bottom: 3px solid #f2f2f2;
+  margin-left: 30px;
 }
 
 
@@ -826,6 +839,11 @@ line-height: 0%;
 .fas.fa-search {
 display: block;
   
+}
+
+.popu_ {
+border-radius: unset;
+
 }
 
 .popu_2 a {
@@ -840,7 +858,7 @@ display: block;
 .img_panier,
 .img_amina {
 
-min-width: 100%;
+  max-width: 100%;
 }
 
   .canneb,
@@ -849,26 +867,18 @@ min-width: 100%;
   .mer,
   .panier,
   .amina {
-    
-    width: 100%;
+    flex: 1 0 100%;
+    max-width: 100%;
   }
 
+.marseille {
+  gap:20px
 
-  .soleil,
-  .eau,
-  .bleu_blanc{
-    object-fit: cover;
-  }
-
-
-
-.img_soleil,
-.img_eau,
-.img_bleu_blanc {
-  height: 170px;
-
-
+  
 }
+
+
+
 
   .propos {
     flex-direction: column;
@@ -881,28 +891,4 @@ min-width: 100%;
 }
 
 
-/*@media all and (max-width: 380px) {
-
-.container,
-.heber_,
-#hebergement{
-
-width: 375px;
-
 }
-
-.canneb,
-.mouette,
-.port,
-.mer,
-.panier,
-.amina {
-  
-  width: 350px;
-}
-
-
-
-}*/
-
-
