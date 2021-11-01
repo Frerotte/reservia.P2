@@ -46,7 +46,7 @@ margin-right: 45px;
   height: 80px;
   padding: 0;
   margin: 0;
-
+  text-align: center;
 }
 
 .hebergements,
@@ -264,7 +264,7 @@ margin-top: 40px;
   background-color: #f2f2f2;
   border-radius: 30px 30px 30px 30px;
   margin-right: 60px;
-  padding: 20px;
+
   width: 67%;
 }
 
@@ -505,9 +505,7 @@ padding: 0 0 0 13px;
   list-style-type: none;
 }
 
-.propos_txt {
-  padding: 0;
-}
+
 
 
 body {
@@ -519,6 +517,11 @@ body {
 
 footer {
   background-color: #f2f2f2;
+
+}
+
+.propos li{
+  margin-bottom: 20px;
 }
 
 footer .container {
@@ -591,12 +594,18 @@ footer .container {
     margin-right: 0%;
     width: 100%;
     order: 2;
+
   }
 
  .popu_:nth-child(2) {
     order: 1;
 width: 100%;
   }
+
+.heber_card {
+  margin: 0 5% 0 5%;
+}
+
 
 
   .soleil,
@@ -707,7 +716,7 @@ header {
   
   .boutons{
     order: 2;
-margin-left: 0%;
+width: 100%;
   }
 
   
@@ -792,7 +801,7 @@ margin-left: 0%;
 .activites {
  width: 50%;
  margin: 0;
- text-align: center;
+ 
 }
 
 
