@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Raleway";
+  font-family: "Raleway.ttf";
   src: url("Raleway-Black.ttf") format "truetype";
 
 }
@@ -194,8 +194,17 @@ margin-top: 40px;
   
   margin: 30px;
   padding-right: 10px;
+
 }
 
+.eco_:hover,
+.fam_:hover,
+.rom_:hover,
+.ani_:hover {
+cursor: pointer;
+transition-duration: 0.5s;
+background-color: #e2ecff;
+}
 
 
 .eco,
@@ -805,7 +814,7 @@ width: 100%;
 }
 
 .rechercher {
-  width: 40px;
+  width: 45%;
   border-radius: 10px 10px 10px 10px;
   margin: 0 0px 0px 10%;
   padding: 0% 10px 0 1px;
