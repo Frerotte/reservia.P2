@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Raleway.ttf";
-  src: url("Raleway-Black.ttf") format('truetype');
+  src: url("Raleway-Black.ttf") format('truetype'),
+
 
 }
 
 .container {
-
 max-width: 1500px;
 margin: auto;
 width: 100%;
