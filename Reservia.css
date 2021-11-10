@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Raleway.ttf";
-  src: url("Raleway-Black.ttf") format('truetype'),
-
+  src: url("Raleway-Black.ttf") format "truetype";
 
 }
 
@@ -515,6 +514,7 @@ padding: 0 0 0 13px;
 
 * {
   box-sizing: border-box;
+
 }
 
 .propos div {
